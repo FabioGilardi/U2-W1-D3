@@ -56,8 +56,6 @@ nav ul li a img {
 
 #shop {
   width: 20%;
-  /* display: flex;
-    justify-content: space-around; */
 }
 
 #shop a {
@@ -110,6 +108,7 @@ nav ul li a img {
   background-color: #f3df85;
   border: 1px solid #f3df85;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .product {
@@ -170,4 +169,166 @@ article img {
   max-height: 300px;
   max-width: 450px;
   margin-top: 2em;
+}
+
+/* Media --------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 568px) {
+  nav {
+    width: 90%;
+    margin: 0.5em auto;
+    border-radius: 80px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    width: 35%;
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  #shop {
+    width: 80%;
+    order: -1;
+  }
+
+  #shop a {
+    justify-content: center;
+  }
+
+  #shop a img {
+    margin-right: 1em;
+  }
+
+  h1,
+  h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 867px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    width: 25%;
+  }
+
+  main {
+    flex-shrink: 5;
+  }
+
+  h1 {
+    margin: 0.5em 1.5%;
+  }
+
+  h3 {
+    margin: 0.5em 4%;
+  }
+  nav {
+    height: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    width: 80%;
+    text-align: center;
+    margin: 2em 0;
+  }
+
+  #shop {
+    width: 80%;
+    order: -1;
+  }
+
+  #shop a {
+    justify-content: center;
+  }
+
+  #shop a img {
+    margin-right: 1em;
+  }
+
+  #cards-container {
+    flex-wrap: nowrap;
+  }
+
+  #hidden-one {
+    display: none;
+  }
+
+  article {
+    width: 89%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    width: 25%;
+  }
+
+  main {
+    flex-shrink: 5;
+  }
+
+  h1 {
+    margin: 0.5em 1.5%;
+  }
+
+  h3 {
+    margin: 0.5em 4%;
+  }
+
+  nav {
+    height: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    width: 80%;
+    text-align: center;
+    margin: 1em 0;
+    padding: 2em 0;
+  }
+
+  #shop {
+    width: 80%;
+    order: -1;
+  }
+
+  #shop a {
+    justify-content: center;
+  }
+
+  #shop a img {
+    margin-right: 1em;
+  }
+
+  #cards-container {
+    flex-wrap: nowrap;
+  }
+
+  #hidden-one {
+    display: flex;
+  }
+
+  article {
+    width: 89%;
+  }
 }
