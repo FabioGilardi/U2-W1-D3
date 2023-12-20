@@ -1,0 +1,44 @@
+nav {
+  width: 100%;
+  margin: 30px auto;
+  background-color: #fbf7e3;
+  border-radius: 100px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0;
+}
+
+nav ul li {
+  background-color: #f3df85;
+  padding: 1em;
+  border: 1px solid #f3df85;
+  border-radius: 50px;
+}
+
+nav ul li a {
+  color: #612406;
+  text-decoration: none;
+}
+
+nav ul li a img {
+  width: 50px;
+}
+
+#shop {
+  width: 15%;
+  /* display: flex;
+  justify-content: space-around; */
+}
+
+#shop a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #612406;
+}
